@@ -26,10 +26,10 @@ section{
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-end; /*posição dos botões*/
 
-    align-items: center;
-
+    align-items: center; /*alinha todos os itens no meio (vertical)*/
+    position: fixed; /*fixar barra de navegação*/
 }
 
 /*barra de itens de navegação*/
@@ -82,7 +82,7 @@ section{
     background-color: rgb(70, 70, 197);
     color: white;
 
-    border-block-end: 2px solid white;
+    border-block-end: 1px solid white;
     padding: 5px;
 }
 
@@ -111,7 +111,7 @@ section{
 
     padding: 10px 0;
 
-    border-block-end: 2px solid white;
+    border-block-end: 1px solid white;
     padding: 5px;
 }   
 
@@ -121,8 +121,6 @@ section{
     font-size: 32px;
     font-weight: bold;
     color: white;
-    
-    border-block-end: 2px solid white;
 
 }
 /*Card interno sobre mim*/
@@ -134,12 +132,12 @@ section{
     justify-content: center;
     align-items: center;
 
-    border: 2px solid white;
+    border: 1px solid white;
 
     color: white;
 
     padding: 10px 0;
-
+    
 }
 
 /*Texto sobre mim*/
@@ -159,7 +157,7 @@ section{
     justify-content: center;
     align-items: center;
 
-    border-block-end: 2px solid white;
+    border-block-end: 1px solid white;
     padding: 5px;
 }
 
@@ -170,8 +168,6 @@ section{
     font-size: 32px;
     font-weight: bold;
     color: white;
-
-    border-block-end: 2px solid white;
 
 }
 
@@ -187,7 +183,7 @@ section{
     justify-content: space-between;
     align-items: center;
 
-    border: 2px solid white;
+    border: 1px solid white;
 
     color: white;
     
@@ -204,7 +200,7 @@ section{
 /*Atuação profissional*/
 
 .atc_profissional{
-    min-block-size: 31em;
+    min-block-size: 20em;
     
     display: flex;
     flex-direction: column;
@@ -213,7 +209,7 @@ section{
 
     background-color: rgb(70, 70, 197);
 
-    border-block-end: 2px solid white;
+    border-block-end: 1px solid white;
     padding: 5px;
 }
 
@@ -225,8 +221,6 @@ section{
     font-size: 32px;
     font-weight: bold;
     color: white;
-
-    border-block-end: 2px solid white;
 
 }
 /*Atuação profissional - sessão dos cads*/
@@ -245,7 +239,7 @@ section{
     inline-size: 50%;
     block-size: 50%;
 
-    border: 2px solid white;
+    border: 1px solid white;
 
     color: white;
 
@@ -256,7 +250,7 @@ section{
     margin-inline-start: 5px;
     padding: 10px;
 
-    border-block-end: 2px solid white;
+    border-block-end: 1px solid white;
 }
 
 /*Cards atuação profissional - texto*/
@@ -277,7 +271,7 @@ section{
 
     background-color: rgb(70, 70, 197);
 
-    border-block-end: 2px solid white;
+    border-block-end: 1px solid white;
     align-items: center;
 
     padding: 5px;
@@ -290,8 +284,6 @@ section{
     font-size: 32px;
     font-weight: bold;
     color: white;
-
-    border-block-end: 2px solid white;
 
 }
 
@@ -306,7 +298,7 @@ section{
 
     color: white;
 
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 50px;
 }
 /*Contatos - itens da lista*/
@@ -340,7 +332,6 @@ section{
 
     background-color: rgb(70, 70, 197);
 
-    border-block-end: 2px solid white;
     align-items: center;
     padding: 5px;
 }
@@ -350,8 +341,6 @@ section{
     font-size: 32px;
     font-weight: bold;
     color: white;
-
-    border-block-end: 2px solid white;
 
 }
 
@@ -397,7 +386,7 @@ section{
     justify-content: center;
     align-items: center;
 
-    border-block-end: 2px solid white;
+    border-block-end: 1px solid white;
     padding: 5px;
 }
 
@@ -406,7 +395,7 @@ section{
     font-size: 32px;
     font-weight: bold;
     color: white;
-    border-block-end: 2px solid white;
+
 }
 .container{
     inline-size: 80%;

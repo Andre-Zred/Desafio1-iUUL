@@ -127,7 +127,7 @@ section{
 }
 /*Card interno sobre mim*/
 .sobre div{
-    inline-size: 75%;
+    inline-size: 85%;
 
     display: flex;
     flex-direction: row-reverse;
@@ -179,9 +179,9 @@ section{
 
 .form div{
 
-    inline-size: 75%;
+    inline-size: 85%;
     block-size: 50%;
-    background-color: rgb(53, 53, 226);
+    background-color: rgb(70, 70, 197);
 
     display: flex;
     justify-content: space-between;
@@ -241,7 +241,7 @@ section{
 /*Atuação profissional - card*/
 
 .card-prof {
-    background-color: rgb(53, 53, 226);
+    background-color: rgb(70, 70, 197);
     inline-size: 50%;
     block-size: 50%;
 

@@ -1,37 +1,480 @@
+
+/*Estilo geral*/
+
 *{
 
-    width: 100%;
     text-decoration: none;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
 }
+
+section{
+    block-size: 31em;
+}
+
+/*Menu de navegação*/
+
 .nav-bar{
-    height: 48px;
-    background-color: rgb(6, 6, 122);
+
     inline-size: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-.nav-bar nav{
-    display: flex;
-    justify-content: flex-end;
-    width: 75%;
-    margin: 0;
-    padding: 0;
-}
-.nav-bar nav ul{
+    block-size: 48px;
+
+    background-color: rgb(6, 6, 122);
+
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 
+    align-items: center;
+
 }
+
+/*barra de itens de navegação*/
+
+.nav-bar nav{
+    margin-inline-end: 4%;
+    
+}
+
+/*Alinhando itens da barra na horizontal*/
+
+.nav-bar nav ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*Estilização dos botões*/
+
 .nav-bar nav ul li a{
     color: white;
     padding: 4px;
     border: 2px solid white;
     border-radius: 10px;
-    margin: 0;
+    margin: 0 0.4em;
+}
+
+/*Animação ao passar o mouse pelos botões*/
+
+.nav-bar nav ul li a:hover{
+    background-color: rgb(53, 53, 226);
+}
+
+
+
+/*Principal*/
+
+
+
+.pagina-principal{
+
+    min-block-size: 31em;
+    
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(70, 70, 197);
+    color: white;
+
+    border-block-end: 2px solid white;
+    padding: 5px;
+}
+
+.pagina-principal h1{
+    font-size: 32px;
+    font-weight: bold;
+
+    border: 2px solid white;
+
+    border-radius: 10px;
+
+    padding: 6%;
+    margin-block-end: 50px;
+    
+}
+
+/*Sobre mim*/
+
+.sobre{
+    background-color: rgb(70, 70, 197);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 0;
+
+    border-block-end: 2px solid white;
+    padding: 5px;
+}   
+
+.sobre h1{
+    
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    
+    border-block-end: 2px solid white;
+
+}
+/*Card interno sobre mim*/
+.sobre div{
+    inline-size: 75%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid white;
+
+    color: white;
+
+    padding: 10px 0;
+
+}
+
+/*Texto sobre mim*/
+
+.sobre p{
+    inline-size: 50%;
+    margin-inline-end: 10px;
+}
+
+/*Formação*/
+
+.form{
+    background-color: rgb(70, 70, 197);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-block-end: 2px solid white;
+    padding: 5px;
+}
+
+/*título de formação*/
+
+.form h1{
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+
+    border-block-end: 2px solid white;
+
+}
+
+/*CArd interno de formação*/
+
+.form div{
+
+    inline-size: 75%;
+    block-size: 50%;
+    background-color: rgb(53, 53, 226);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 2px solid white;
+
+    color: white;
+    
+    padding: 0 10px;
+
+}
+
+/*Texto interno do card de formação*/
+
+.form div p{
+    inline-size: 50%;
+}
+
+/*Atuação profissional*/
+
+.atc_profissional{
+    min-block-size: 31em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(70, 70, 197);
+
+    border-block-end: 2px solid white;
+    padding: 5px;
+}
+
+/*Atuação profissional - título*/
+
+.atc_profissional h1{
+
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+
+    border-block-end: 2px solid white;
+
+}
+/*Atuação profissional - sessão dos cads*/
+
+.card-section{
+    display: flex;
+    flex-direction: row;
+    inline-size: 90%;
+    
+}
+
+/*Atuação profissional - card*/
+
+.card-prof {
+    background-color: rgb(53, 53, 226);
+    inline-size: 50%;
+    block-size: 50%;
+
+    border: 2px solid white;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-inline-start: 5px;
+    padding: 10px;
+
+    border-block-end: 2px solid white;
+}
+
+/*Cards atuação profissional - texto*/
+
+.card-prof p{
+    inline-size: 50%;
+    margin-inline-start: 10px;
+}
+
+/*Contatos*/
+
+.contatos{
+    min-block-size: 31em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(70, 70, 197);
+
+    border-block-end: 2px solid white;
+    align-items: center;
+
+    padding: 5px;
+}
+
+/*Contatos - Titulo*/
+
+.contatos h1{
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+
+    border-block-end: 2px solid white;
+
+}
+
+/*Contatos - lista*/
+
+.contatos ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    border: 2px solid white;
+    padding: 50px;
+}
+/*Contatos - itens da lista*/
+.contatos ul li{
+    margin: 0 10px;
+    text-align: center;
+    align-items: center;
+}
+
+/*Contatos - item de contato*/
+
+.contatos ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+
+/*Contatos - animação ao passar por cima dos contatos*/
+
+.contatos ul li a:hover{
+    border: 2px solid white;
+}
+
+/* portfolio */
+
+.portfolio{
+    min-block-size: 31em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgb(70, 70, 197);
+
+    border-block-end: 2px solid white;
+    align-items: center;
+    padding: 5px;
+}
+
+.portfolio h1{
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+
+    border-block-end: 2px solid white;
+
+}
+
+.card-list{
+    display: flex;
+    flex-direction: row;
+    inline-size: 95%;
+    block-size: 100%;
+}
+
+.card-list div{
+    border: 2px solid white;
+    inline-size: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-inline-start: 4px;
+}
+
+.card-list div a{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    border: 2px solid white;
+}
+
+.card-list div a:hover{
+    background-color:  rgb(6, 6, 122);
+}
+
+/*Descricao Tecnologia*/
+
+.desc-tecnologia{
+    min-block-size: 31em;
+    background-color: rgb(70, 70, 197);
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-block-end: 2px solid white;
+    padding: 5px;
+}
+
+.desc-tecnologia h1{
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    border-block-end: 2px solid white;
+}
+.container{
+    inline-size: 80%;
+    block-size: 90%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-tecnologia{
+    inline-size: 80%;
+    block-size: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-tecnologia p{
+    inline-size: 75%;
+    margin: 20px 0;
+}
+
+.links-projeto{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.links-projeto > a{
+    color: white;
+    border: 2px solid white;
+    margin-inline-start: 5px;
+    padding: 5px;
+}
+
+.links-projeto > a:hover{
+    background-color: rgb(6, 6, 122);
+}
+
+
+
+/*   Rodapé   */
+
+
+.rodape{
+    block-size: 48px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(6, 6, 122);
+    padding: 5px 0;
+    
+}
+
+.rodape h1{
+    color: white;
+}
+
+.rodape ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.rodape ul li{
+    margin: 0 10px;
 }

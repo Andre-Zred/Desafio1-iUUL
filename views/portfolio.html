@@ -230,28 +230,28 @@
         </ul>
 
     </footer>
-<section class="form">   
-
-    <form id="email">
-
-        <fieldset>
-
-            <legend class="titulo">Entre em contato</legend>
-            <input class="dado-form" id="name" type="text" placeholder="Digite aqui seu nome" required>
-            <br>
-            <input class="dado-form" id="email" type="email"  placeholder="Digite aqui seu email" required>
-            <br>
-            <textarea class="area-form" id="text" cols="30" rows="10" placeholder="Digite sua mensagem" required>
-                
-            </textarea>
-            <div class="form-btn">
-                <a href="/localStorage/storage.html" target="__blanked">Mensagens</a>
-                <button onclick="adicionarMensagem()" class="botao">Enviar</button>
-            </div>
-
-        </fieldset>
-
-    </form>
-</section>
+    <section class="container">   
+        <h2>Envie-me uma mensagem</h2>
+        <form class="form" id="email">
+    
+            <fieldset>
+    
+                <legend class="titulo">Entre em contato</legend>
+                <input class="dado-form" id="name" type="text" placeholder="Digite aqui seu nome" required>
+                <br>
+                <input class="dado-form" id="email" type="email"  placeholder="Digite aqui seu email" required>
+                <br>
+                <textarea class="area-form" id="text" cols="30" rows="10" placeholder="Digite sua mensagem" required>
+                    
+                </textarea>
+                <div class="list-btn">
+                    <a href="/views/mensagens/msg.html">Mensagens</a>
+                    <button onclick="ArmazenarMSG()" class="botao">Enviar</button>
+                </div>
+    
+            </fieldset>
+    
+        </form>
+    </section>
 </body>
 </html>

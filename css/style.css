@@ -467,3 +467,75 @@ section{
 .rodape ul li{
     margin: 0 10px;
 }
+/*===================== FORMULÁRIO  =======================*/
+
+.form{
+    background-color: var(--var-bg);
+    padding: 1em;
+    inline-size: 80%;
+    block-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form fieldset{
+    inline-size: 90%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5em;
+}
+
+.form fieldset input{
+    block-size: 3em;
+    text-align: center;
+    color: black;
+    font-style: oblique;
+    font-size: 13px;
+
+    border-radius: 4px;
+}
+
+.form fieldset textarea{
+    text-align: center;
+    color: black;
+    font-style: oblique;
+    font-size: 13px;
+
+    border-radius: 4px;
+}
+.list-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin: 1em;
+}
+
+.list-btn a{
+    color: white;
+    padding: 0.1em 0.2em;
+    border: 2px solid var(--var-menu);
+    border-radius: 4px;
+    margin-inline-end: 0.5em;
+}
+
+.list-btn a:hover{
+    background-color: var(--var-menu);
+    color: white;
+}
+
+.botao{
+    block-size: 2.5em;
+    inline-size: 8em;
+    border: 2px solid var(--var-menu);
+    border-radius: 4px;
+}
+
+.botao:hover{
+    
+    background-color: var(--var-menu);
+    color: white;
+}

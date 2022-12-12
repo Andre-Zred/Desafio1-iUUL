@@ -204,6 +204,31 @@
             </div>
         </section>
 
+        <!-- Contato-->
+
+        <section class="container-email">   
+
+            <form id="email">
+    
+                <fieldset>
+    
+                    <legend class="titulo">Entre em contato</legend>
+                    <input class="dado-form" id="form_name" type="text" placeholder="Digite aqui seu nome" required>
+                    <br>
+                    <input class="dado-form" id="form_email" type="email"  placeholder="Digite aqui seu email" required>
+                    <br>
+                    <textarea class="area-form" id="form_text" cols="30" rows="10" placeholder="Digite sua mensagem" required>
+                        
+                    </textarea>
+                    <div class="form-btn">
+                        <a href="/views/localStorage/storage.html" target="_blanked">Mensagens</a>
+                        <button onclick="ArmazenarMSG()" class="botao">Enviar</button>
+                    </div>
+    
+                </fieldset>
+    
+            </form>
+        </section>
     </main>
 
     <!--Rodapé-->
@@ -230,28 +255,6 @@
         </ul>
 
     </footer>
-    <section class="container">   
-        <h2>Envie-me uma mensagem</h2>
-        <form class="form" id="email">
-    
-            <fieldset>
-    
-                <legend class="titulo">Entre em contato</legend>
-                <input class="dado-form" id="name" type="text" placeholder="Digite aqui seu nome" required>
-                <br>
-                <input class="dado-form" id="email" type="email"  placeholder="Digite aqui seu email" required>
-                <br>
-                <textarea class="area-form" id="text" cols="30" rows="10" placeholder="Digite sua mensagem" required>
-                    
-                </textarea>
-                <div class="list-btn">
-                    <a href="/views/mensagens/msg.html">Mensagens</a>
-                    <button onclick="ArmazenarMSG()" class="botao">Enviar</button>
-                </div>
-    
-            </fieldset>
-    
-        </form>
-    </section>
+    <script src="/js/msg.js"></script>
 </body>
 </html>

@@ -79,21 +79,32 @@ body{
 }
 
 /*preenchimento interno dos botões*/
-
-.botoes button{
+.botoes a{
     padding: 0.5em;
     border-radius: 5px;
+    color: white;
+    border: 2px solid var(--var-text-color);
+}
+
+.botoes button{
+    padding: 0.7em;
+    border-radius: 5px;
+    border: 2px solid var(--var-text-color);
+}
+
+.botoes button:nth-child(1){
+    margin-inline-start: 0.7em;
 }
 
 
 /*Adicioando margem a direita do primeiro botão*/
 
-.botoes button:nth-child(1){
-    margin-inline-end: 0.5em;
+.botoes a:hover{
+    background-color: var(--var-menu);
 }
 
 .botoes button:hover{
-    background-color: var(--var-bg);
+    background-color: var(--var-menu);
     color: var(--var-text-color);
     border-color: var(--var-menu);
 }
